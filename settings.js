@@ -1,7 +1,7 @@
 // Change the url to the domain of your app
 exports.url = 'https://www.animalbiome.heroku.com';
 
-exports.senderEmail = "rolando@animalbiome.com";
+exports.senderEmail = "rolando@animalmail.heroku.com";
 exports.senderName = "AnimalBiome";
 
 // set 'exports.listId = null' to add contact to all contacts, but no specific list

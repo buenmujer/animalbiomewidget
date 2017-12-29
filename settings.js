@@ -1,5 +1,5 @@
 // Change the url to the domain of your app
-exports.url = 'https://animalmail.heroku.com';
+exports.url = 'https://animalemail.heroku.com';
 
 exports.senderEmail = "rolando@animalbiome.com";
 exports.senderName = "AnimalBiome";

@@ -1,1 +1,56 @@
-<h3>Thank you for confirming your email address.  You've been added to our mailing list.</h3>
+
+<!doctype html>
+<html>
+	<head>
+		<title>Success</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<script type="text/javascript" src="//use.typekit.net/uqy4hsa.js"></script>
+		<script type="text/javascript" src="/assets/script/instagram.js"></script>
+		<script type="text/javascript" src="/assets/script/main.js"></script>
+		<link rel="stylesheet" href="/assets/style/main.css">
+	</head>
+	<body>
+		<div class="profile">
+			<img src="/assets/images/profile.jpg" alt="Anthony Garand">
+		</div>
+		<article>
+			<h2 class="greeting">Hey,</h2>
+			<h1 class="name">I'm Anthony Garand</h1>
+			<h3 class="message">I’m a Jesus lover, <a href="http://github.com/garand" target="_blank">front-end engineer</a>, and <a href="http://instagram.com/garand">photography enthusiast</a>. Send me an <a href="mailto:garand@garand.me">email</a>, or read my <a href="http://twitter.com/garand">tweets</a>.</h3>
+			<div id="instagram"></div>
+		</article>
+	</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="/Users/rolandosandor/Documents/GitHub/sendgrid_subscription_widget/server/static/instafeed.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+
+
+  <script>
+  var feed = new Instafeed({
+    clientId: '9c0d79190dcb40fb81ca9d6631eab91c',
+    get: 'tagged',
+    tagName: 'newyears',
+    resolution: 'low_resolution'
+  });
+  feed.run();
+</script>
+<div id="instafeed"></div>
+
+<h3>Thank you for confirming your email address. You've been added to our mailing list.</h3>
+
+
+
+</body>
+</html>

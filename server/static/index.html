@@ -1,63 +1,45 @@
-<form action="https://mailmodal.herokuapp.com/confirmEmail" method="post">
-	<fieldset>
-		<legend>Signup for Cool Information</legend>
 
-		<label for="email">Email:</label>
-		<input type="text" name="email" placeholder="hello@example.com" /><br>
+<!doctype html>
+<html>
 
-		<label for="first_name">First Name:</label>
-		<input type="text" name="first_name" placeholder="John" /><br>
-
-		<label for="last_name">Last Name:</label>
-		<input type="text" name="last_name" placeholder="Doe" /><br>
-
-		<button type="submit" value="Submit" />SIGN UP</button>
-	</fieldset>
-</form>
+	<head>
+		<title>Success</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<script type="text/javascript" src="//use.typekit.net/uqy4hsa.js"></script>
+		<script type="text/javascript" src="/server/static/index.html"></script>
+		<script type="text/javascript" src="/server/static/main.js"></script>
+		<link rel="stylesheet" href="/server/static/main.css">
+	</head>
 
 
-<style>
-html {
-	font-family: arial;
-	font-size: 16;
-}
-form {
-	display: inline-block;
-}
-legend {
-	font-size: 14;
-}
-label {
-	width: 100px;
-	display: inline-block;
-	margin-left: 8;
-	margin-top: 15;
-	font-weight: bold;
-}
-input, button {
-	font-size: 12px;
-	padding: 5px;
-	margin-right: 8;
-}
-input {
-	border-radius: 3px;
-	border: 1px solid #ccc;
-	height: 25;
-	width: 200px;
-}
-button {
-	border-radius: 3px;
-	border: 0px solid #ccc;
-	margin-top: 15px;
-	margin-bottom: 5px;
-	background-color: #1A82E2;
-	color: white;
-	text-align: center;
-	font-weight: bold;
-	font-size: 14px;
-	width: 308px;
-	height: 32px;
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	float: right;
-}
-</style>
+	<body>
+		<div class="profile">
+			<img src="file:///Users/rolandosandor/Documents/GitHub/sendgrid_subscription_widget/server/static/dog.jpg" alt="Beautiful Creatures">
+		</div>
+		<article>
+			<h2 class="greeting">Hey,</h2>
+			<h1 class="name">I'm Anthony Garand</h1>
+			<h3 class="message">I’m a Jesus lover, <a href="http://github.com/garand" target="_blank">front-end engineer</a>, and <a href="http://instagram.com/garand">photography enthusiast</a>. Send me an <a href="mailto:garand@garand.me">email</a>, or read my <a href="http://twitter.com/garand">tweets</a>.</h3>
+
+			<form action="https://mailmodal.herokuapp.com/confirmEmail" method="post">
+				<fieldset>
+					<legend>Signup for Cool Information</legend>
+
+					<label for="email">Email:</label>
+					<input type="text" name="email" placeholder="hello@example.com" /><br>
+
+					<label for="first_name">First Name:</label>
+					<input type="text" name="first_name" placeholder="John" /><br>
+
+					<label for="last_name">Last Name:</label>
+					<input type="text" name="last_name" placeholder="Doe" /><br>
+
+					<button type="submit" value="Submit" />SIGN UP</button>
+				</fieldset>
+			</form>
+
+
+			<div id="instagram"></div>
+		</article>
+	</body>
+</html>

@@ -11,13 +11,20 @@
 
 	<body>
 		<div class="profile">
-			<img src="./dog.jpg" alt="Beautiful Creatures">
+			<img src="./healthydog.jpg" alt="Beautiful Creatures">
 		</div>
 
 		<article>
-			<h2 class="greeting">Welcome</h2>
-			<h1 class="name"></h1>
+			<h1 class="greeting">Welcome to AnimalBiome!</h1>
+			<h2 class="name"> </h2>
 			<h3 class="message"></a>, and <a href="http://instagram.com/garand">photography enthusiast</a>.</h3>
+
+			<form action="https://mailmodal.herokuapp.com/confirmEmail" method="post">
+				<fieldset>
+					<input type="text" name="email" placeholder="hello@example.com" /><br>
+					<button type="submit" value="Submit" />Sign me up!</button>
+				</fieldset>
+			</form>
 
 			<div id="instagram"></div>
 		</article>

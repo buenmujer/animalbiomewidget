@@ -1,9 +1,9 @@
 try{Typekit.load();}catch(e){}
 
 var feed = new Instafeed({
-		get: 'user',
-		userId: 94764,
-		accessToken: '94764.1677ed0.c6256a27eddf41709ddf29af3469a4e5',
+		get: 'tagged',
+		tagName: "animalbiome",
+		accessToken: '9c0d79190dcb40fb81ca9d6631eab91c',
 		target: 'instagram',
 		resolution: 'standard_resolution',
 		after: function() {
@@ -24,8 +24,9 @@ window.onload = function() {
 		t.type  = 'text/javascript';
 		t.async = true;
 		t.id    = 'gauges-tracker';
-		t.setAttribute('data-site-id', '4d5aa2a95ffe1f587b000001');
+		t.setAttribute('data-site-id', '');
 		t.src = '//secure.gaug.es/track.js';
+		
 		var s = document.getElementsByTagName('script')[0];
 		s.parentNode.insertBefore(t, s);
 	})();

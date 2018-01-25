@@ -1,1 +1,34 @@
-<h3>Please check your inbox for an email containing a link to verify your email address.</h3>
+<!doctype html>
+<html>
+	<head>
+		<title>Welcome</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+		<script type="text/javascript" src="https://use.typekit.net/uqy4hsa.js"></script>
+		<script type="text/javascript" src="./instagram.js"></script>
+		<script type="text/javascript" src="./main.js"></script>
+		<link rel="stylesheet" href="./main.css">
+	</head>
+
+	<body>
+		<div class="profile">
+			<img src="./checkemail.jpg" alt="Beautiful Creatures">
+		</div>
+
+		<article>
+			<h1 class="greeting">Welcome to AnimalBiome!</h1>
+			<h2 class="name"> </h2>
+
+      <h3>Please check your inbox for an email containing a link to verify your email address.</h3>
+			<h3 class="message"></a>, and <a href="http://instagram.com/garand">photography enthusiast</a>.</h3>
+
+			<form action="https://mailmodal.herokuapp.com/confirmEmail" method="post">
+				<fieldset>
+					<input type="text" name="email" placeholder="hello@example.com" /><br>
+					<button type="submit" value="Submit" />Sign me up!</button>
+				</fieldset>
+			</form>
+
+			<div id="instagram"></div>
+		</article>
+	</body>
+</html>

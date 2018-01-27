@@ -2,7 +2,7 @@ try{Typekit.load();}catch(e){}
 
 var feed = new Instafeed({
 		get: 'tagged',
-		tagName: "animalbiome",
+		tagName: 'animalbiome',
 		accessToken: '9c0d79190dcb40fb81ca9d6631eab91c',
 		target: 'instagram',
 		resolution: 'standard_resolution',
@@ -26,7 +26,7 @@ window.onload = function() {
 		t.id    = 'gauges-tracker';
 		t.setAttribute('data-site-id', '');
 		t.src = '//secure.gaug.es/track.js';
-		
+
 		var s = document.getElementsByTagName('script')[0];
 		s.parentNode.insertBefore(t, s);
 	})();

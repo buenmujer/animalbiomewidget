@@ -15,9 +15,9 @@
 
 body{
   margin:0;
-  font-family: Work, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Work", Helvetica Neue, Helvetica, sans-serif;
   font-size:17px;
-  color:#926239;
+  color:#13974c;
   line-height:1.6;
 }
 
@@ -34,6 +34,10 @@ body{
   padding:0 20px;
 }
 
+#showcase input {
+
+}
+
 #showcase h1{
   font-size:50px;
   line-height:1.2;
@@ -46,20 +50,27 @@ body{
 #showcase .button{
   font-size:18px;
   text-decoration:none;
-  color:#926239;
-  border:#926239 1px solid;
+  color:#13974c;
+  border:#13974c 1px solid;
   padding:10px 20px;
   border-radius:10px;
   margin-top:20px;
 }
 
 #showcase .button:hover{
-  background:#926239;
+  background:#13974c;
   color:#fff;
 }
 
-
-
+input {
+	height:200px;
+	font-size:14pt;
+		border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    font: 13px sans-serif
+}
 
 
 </style>
@@ -69,7 +80,13 @@ body{
 <body>
 	<header id="showcase">
     <h1>Looks like there was an error with your email. Try again?</h1>
-    <p>We need a valid email.</p>
+
+		<form action="https://mailmodal.herokuapp.com/confirmEmail" method="post">
+
+				<input type="text" name="email" placeholder="hello@example.com" /><br>
+				<button type="submit" value="Submit" />Sign me up!</button>
+
+		</form>
 
     <a href="#" class="button">Read More</a>
   </header>

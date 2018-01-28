@@ -8,11 +8,81 @@
 		<script type="text/javascript" src="/main.js"></script>
 		<link rel="stylesheet" href="/main.css">
 
+		<style>
+		*{
+		  margin:0;
+		  padding:0;
+		}
+
+		body{
+		  margin:0;
+		  font-family: "Work", Helvetica Neue, Helvetica, sans-serif;
+		  font-size:17px;
+		  color:#13974c;
+		  line-height:1.6;
+		}
+
+		#showcase{
+		  background-image:url('https://marketing-image-production.s3.amazonaws.com/uploads/663a8ce4855d90f1f89560b6a60c16424faecffe8e81c8fdad2065910a55627713f7c72a093ce23461023db5191cd88ffd167fcb63c9afe6f06951315ae5405d.jpg');
+		  background-size:cover;
+		  background-position:center;
+		  height:100vh;
+		  display:flex;
+		  flex-direction:column;
+		  justify-content:center;
+		  align-items:center;
+		  text-align:center;
+		  padding:0 20px;
+		}
+
+		#showcase input {
+
+		}
+
+		#showcase h1{
+		  font-size:50px;
+		  line-height:1.2;
+		}
+
+		#showcase p{
+		  font-size:20px;
+		}
+
+		#showcase .button{
+		  font-size:18px;
+		  text-decoration:none;
+		  color:#13974c;
+		  border:#13974c 1px solid;
+		  padding:10px 20px;
+		  border-radius:10px;
+		  margin-top:20px;
+		}
+
+		#showcase .button:hover{
+		  background:#13974c;
+		  color:#fff;
+		}
+
+		input {
+			height:40px;
+			size:50px;
+
+			font-size:30pt;
+				border: 0;
+		    padding: 0;
+		    margin: 0;
+		    background: white;
+		}
+
+
+		</style>
 	</head>
 
+
+
 	<body>
+		<header id="showcase">
 		<div class="profile">
-			<img src="/healthydog.jpg" alt="Beautiful Creatures">
 		</div>
 
 		<article>
@@ -21,13 +91,15 @@
 			<h3 class="message"></a>, and <a href="http://instagram.com/garand">photography enthusiast</a>.</h3>
 
 			<form action="https://mailmodal.herokuapp.com/confirmEmail" method="post">
-				<fieldset>
+
+					<input type="text" name="name" placeholder="First Name" /><br>
 					<input type="text" name="email" placeholder="hello@example.com" /><br>
 					<button type="submit" value="Submit" />Sign me up!</button>
-				</fieldset>
+
 			</form>
 
-			<div id="instagram"></div>
-		</article>
+
+
+</header>
 	</body>
 </html>

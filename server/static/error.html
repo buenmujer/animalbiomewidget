@@ -39,15 +39,36 @@ body{
 }
 
 #showcase h1{
-  font-size:50px;
-  line-height:1.2;
+
 }
 
-#showcase p{
+.showcase p{
   font-size:20px;
 }
 
-#showcase .button{
+div.transbox {
+  margin: 30px;
+  background-color: #50475d;
+  border: 1px solid black;
+  opacity: 0.7;
+  filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+div.transbox h1 {
+		font-size:50px;
+	  line-height:1.2;
+		clear:both;
+		text-shadow: 2px 1px black;
+		padding:10px 10px;
+		font-weight:400;
+		color: white;
+    margin: 5%;
+		text-align: center;
+}
+
+background-color:;
+
+button {
   font-size:18px;
   text-decoration:none;
   color:#13974c;
@@ -57,7 +78,7 @@ body{
   margin-top:20px;
 }
 
-#showcase .button:hover{
+button:hover{
   background:#13974c;
   color:#fff;
 }
@@ -66,13 +87,12 @@ input {
 	height:40px;
 	size:50px;
 
-	font-size:30pt;
+	font-size:25pt;
 		border: 0;
-    padding: 0;
-    margin: 0;
+    padding: 5;
+    margin: 5;
     background: white;
 }
-
 
 </style>
 
@@ -80,15 +100,17 @@ input {
 
 <body>
 	<header id="showcase">
-    <h1>There's an error with your email. Please try again?</h1>
+		<div class="transbox">
+
+
+    <h1>There's something wrong with your email, please try again!</h1>
 
 		<form action="https://mailmodal.herokuapp.com/confirmEmail" method="post">
-
 				<input type="text" name="email" placeholder="hello@example.com" /><br>
-				<button type="submit" value="Submit" />Sign me up!</button>
-
+				<button id="button" type="button" value="Submit" />Let's try again!</button>
 		</form>
 
-    <a href="#" class="button">Read More</a>
+		</div>
+
   </header>
 </body>
